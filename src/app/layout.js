@@ -1,6 +1,7 @@
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
+
+import TmuxBar from "@/components/TmuxBar";
 
 const jetBrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains",
@@ -17,12 +18,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${jetBrainsMono.variable} pb-16 antialiased`}>
+        <TmuxBar />
         {children}
-        <div className="fixed bottom-[5px] flex w-full gap-2 bg-green-500 px-2 font-mono text-black">
-          <span>[0]</span>
-          <Link href={"/"}>0:home</Link>
-          <Link href={"https://github.com/amrxt1"}>1:github</Link>
-        </div>
       </body>
     </html>
   );
