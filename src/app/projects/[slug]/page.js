@@ -13,7 +13,7 @@ const Project = ({}) => {
 
   return (
     <>
-      <CodeBlock cmd={`man ${slug}`}></CodeBlock>
+      <CodeBlock cmd={`./${slug} --info`} />
       <ProjectDetails project={project} />
     </>
   );

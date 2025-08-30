@@ -44,7 +44,6 @@ const projectsData = [
     title: "Custom Assembler",
     desc: "A custom assembler for a teaching CPU architecture.",
     slug: "arm-assembler",
-    img: "/project-images/assembler.png",
     techUsed: ["asm", "python"],
     features: [
       "Parses custom assembly language",
@@ -62,7 +61,7 @@ const projectsData = [
     title: "Fire Hall Events",
     desc: "Website to manage and display upcoming community events.",
     slug: "fire-hall-events",
-    img: "/project-images/fire-hall.png",
+    img: "/project-images/fire-hall-events.png",
     techUsed: ["js"],
     features: [
       "Interactive event calendar",
@@ -100,7 +99,6 @@ const projectsData = [
     title: "shiftBOT",
     desc: "A scheduling assistant bot for shift-based jobs.",
     slug: "shiftbot",
-    img: "/project-images/shiftbot.png",
     techUsed: ["python"],
     features: [
       "Generates optimal shift rotations",
@@ -118,7 +116,6 @@ const projectsData = [
     title: "Applications BOT",
     desc: "Discord bot for handling internship applications.",
     slug: "applications-bot",
-    img: "/project-images/appbot.png",
     techUsed: ["python"],
     features: [
       "Collects and validates form submissions",
@@ -136,7 +133,6 @@ const projectsData = [
     title: "Project: Facebook",
     desc: "Recreation of early Facebook features for learning purposes.",
     slug: "rails-social",
-    img: "/project-images/facebook.png",
     techUsed: ["ruby"],
     features: [
       "User profiles with friend requests",
@@ -155,7 +151,6 @@ const projectsData = [
     title: "CS-120 Projects",
     desc: "Collection of course projects covering core CS concepts.",
     slug: "cs-120",
-    img: "/project-images/cs120.png",
     techUsed: ["python"],
     features: [
       "Sorting algorithm implementations",
