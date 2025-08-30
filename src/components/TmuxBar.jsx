@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const TmuxBar = () => {
   return (
-    <Container className="fixed bottom-0 flex w-full gap-2 bg-green-400 py-0.25 pr-2 pl-2 text-sm font-semibold text-black">
+    <Container className="fixed bottom-0 z-50 flex w-full gap-2 bg-green-400 py-0.25 pr-2 pl-2 text-sm font-semibold text-black">
       <span>[0]</span>
       <Link href={"/"}>0:home</Link>
       <Link href={"/projects"}>1:projects</Link>

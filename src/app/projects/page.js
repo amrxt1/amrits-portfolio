@@ -11,7 +11,7 @@ function Project({ project }) {
         href={`/projects/${slug}`}
         className="underline hover:text-green-400"
       >
-        {title}
+        {`${title}/`}
       </Link>
       <Link
         href={`https://github.com/amrxt1/${repo}`}
