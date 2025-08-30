@@ -5,7 +5,7 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <>
-      <CodeBlock cmd="whoami">
+      <CodeBlock className="text-red-400" cmd="whoami">
         <p>Systems programmer who builds ARM CPUs in Verilog</p>
         <p>Full-stack developer with a hardware background</p>
       </CodeBlock>
@@ -13,7 +13,7 @@ const Hero = () => {
         <p>- ARM CPU: Pipelined processor core</p>
         <p>- CCHive: Student collaboration platform</p>
         <p>- Custom Assembler for ARMv7 ISA subset</p>
-        <Link href="/projects" className="text-green-400 underline">
+        <Link href="/projects" className="underline hover:text-green-400">
           view all projects
         </Link>
       </CodeBlock>

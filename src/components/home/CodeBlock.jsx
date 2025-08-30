@@ -1,8 +1,8 @@
 import Container from "@/components/Container";
 
-const CodeBlock = ({ children, cmd = "ls" }) => {
+const CodeBlock = ({ children, cmd = "ls", className = "" }) => {
   return (
-    <Container className="mt-4">
+    <Container className={`mt-4 ${className}`}>
       <div>
         <span className="mr-1 text-green-400">amrit@portfolio:~$</span>
         <span>{cmd}</span>

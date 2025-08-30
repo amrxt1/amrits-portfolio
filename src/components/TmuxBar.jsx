@@ -1,12 +1,14 @@
+import Container from "./Container";
 import Link from "next/link";
 
 const TmuxBar = () => {
   return (
-    <div className="fixed bottom-[5px] flex w-full gap-2 bg-green-400 px-2 font-mono text-sm text-black">
+    <Container className="fixed bottom-[10px] flex w-full gap-2 bg-green-400 pr-2 pl-2 text-sm font-semibold text-black">
       <span>[0]</span>
       <Link href={"/"}>0:home</Link>
-      <Link href={"https://github.com/amrxt1"}>1:github</Link>
-    </div>
+      <Link href={"/projects"}>1:projects</Link>
+      <Link href={"https://github.com/amrxt1"}>2:github</Link>
+    </Container>
   );
 };
 
