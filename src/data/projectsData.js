@@ -43,7 +43,7 @@ const projectsData = [
     id: 2,
     title: "Custom Assembler",
     desc: "A custom assembler for a teaching CPU architecture.",
-    slug: "armv7",
+    slug: "arm-assembler",
     img: "/project-images/assembler.png",
     techUsed: ["asm", "python"],
     features: [
@@ -61,7 +61,7 @@ const projectsData = [
     id: 3,
     title: "Fire Hall Events",
     desc: "Website to manage and display upcoming community events.",
-    slug: "fire-hall",
+    slug: "fire-hall-events",
     img: "/project-images/fire-hall.png",
     techUsed: ["js"],
     features: [
@@ -80,7 +80,7 @@ const projectsData = [
     id: 4,
     title: "QuickMove Solutions",
     desc: "Logistics and moving services booking platform.",
-    slug: "quickmove",
+    slug: "quickmove-solutions",
     img: "/project-images/quickmove.png",
     techUsed: ["js"],
     features: [
@@ -99,7 +99,7 @@ const projectsData = [
     id: 5,
     title: "shiftBOT",
     desc: "A scheduling assistant bot for shift-based jobs.",
-    slug: "shift-bot",
+    slug: "shiftbot",
     img: "/project-images/shiftbot.png",
     techUsed: ["python"],
     features: [
@@ -117,7 +117,7 @@ const projectsData = [
     id: 6,
     title: "Applications BOT",
     desc: "Discord bot for handling internship applications.",
-    slug: "application-bot",
+    slug: "applications-bot",
     img: "/project-images/appbot.png",
     techUsed: ["python"],
     features: [

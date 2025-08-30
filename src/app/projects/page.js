@@ -15,7 +15,7 @@ function Project({ project }) {
       </Link>
       <Link
         href={`https://github.com/amrxt1/${repo}`}
-        className="ml-4 hover:text-green-400"
+        className="ml-4 hover:text-green-400 hover:underline"
       >
         [view code]
       </Link>
