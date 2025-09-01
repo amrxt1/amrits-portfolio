@@ -40,7 +40,7 @@ const ProjectDetails = ({ project }) => {
           <img
             src={img}
             alt={`${title} preview`}
-            className="border-text/50 max-w-[75%] rounded-sm border-2"
+            className="w-full border-text/50 rounded-sm border-2"
           />
         </div>
       )}

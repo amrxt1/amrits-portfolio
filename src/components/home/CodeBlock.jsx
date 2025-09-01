@@ -1,14 +1,12 @@
-import Container from "@/components/Container";
-
 const CodeBlock = ({ children, cmd = "ls", className = "" }) => {
   return (
-    <Container className={`mt-4 ${className}`}>
+    <div className={`p-2 pb-8 text-sm lg:text-lg ${className}`}>
       <div>
-        <span className="mr-1 text-green-400">amrit@portfolio:~$</span>
+        <span className="mr-1 text-green-500">amrit@portfolio:~$</span>
         <span>{cmd}</span>
       </div>
-      <div className="text-text/75">{children}</div>
-    </Container>
+      <div className="text-text/80">{children}</div>
+    </div>
   );
 };
 
