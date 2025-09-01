@@ -5,7 +5,7 @@ import HeroWelcome from "@/components/home/HeroWelcome";
 
 const Hero = () => {
   return (
-    <Container className="*:border-text/33 mt-4 grid grid-cols-1 gap-0.25 *:border lg:grid-cols-2">
+    <Container className="*:border-text/20 *:hover:border-text/50 mt-4 grid grid-cols-1 *:border lg:grid-cols-2">
       <div className="col-span-1 lg:col-span-2">
         <HeroWelcome />
       </div>

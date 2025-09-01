@@ -3,8 +3,8 @@
 :root {
   /* --background: #ffffff;
   --text: #171717; */
-  --background: #0a0a0a;
-  --text: #ededed;
+  --background: #1e1e2e;
+  --text: #cdd6f4;
 
 }
 
@@ -15,8 +15,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --text: #ededed;
+    --background: #1e1e2e;
+    --text: #cdd6f4;
   }
 }
 

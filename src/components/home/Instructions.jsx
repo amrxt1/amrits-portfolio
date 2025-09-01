@@ -14,11 +14,19 @@ export default function Instructions({ children }) {
           <Display
             clickHandler={() => setShowOverlay(false)}
             heading="Instructions"
-            subHeading="Follow the below for navigation"
-            className="space-y-20"
+            className="space-y-2"
           >
-            <p>Always keep your eyes on the screen</p>
-            <p>Do not type :meme</p>
+            <p>Use the tmux-like bar at the bottom for switching pages</p>
+            <p>
+              Press
+              <span className="text-green-500/70 italic">{' "/" '}</span>
+              anytime for quick actions
+            </p>
+            <p>
+              Do NOT input
+              <span className="text-green-500/70 italic">{' "meme" '}</span>
+              into the Launcher
+            </p>
           </Display>
         </ScreenOverlay>
       )}
