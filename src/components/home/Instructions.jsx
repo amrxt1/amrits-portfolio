@@ -16,15 +16,18 @@ export default function Instructions({ children }) {
             heading="Instructions"
             className="space-y-2"
           >
-            <p>Use the tmux-like bar at the bottom for switching pages</p>
             <p>
-              Press
-              <span className="text-green-500/70 italic">{' "/" '}</span>
-              anytime for quick actions
+              Use the tmux-like bar at the bottom for switching pages. It has
+              clickable links to navigate around.
             </p>
-            <p>
-              Do NOT input
-              <span className="text-green-500/70 italic">{' "meme" '}</span>
+            <p className="hidden md:block">
+              Press
+              <span className="text-green-500/80 italic">{' "/" '}</span>
+              anytime to summon the launcher.
+            </p>
+            <p className="hidden md:block">
+              NB: Do NOT input
+              <span className="text-green-500/80 italic">{' "meme" '}</span>
               into the Launcher
             </p>
           </Display>
