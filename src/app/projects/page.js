@@ -4,23 +4,22 @@ import CodeBlock from "@/components/home/CodeBlock";
 import Link from "next/link";
 
 function Project({ project }) {
-  const { title, desc, slug, techUsed, repo } = project;
+  const { title, slug, techUsed, repo } = project;
   return (
-    <div className="mt-4">
+    <div className="mt-2">
       <Link
         href={`/projects/${slug}`}
-        className="underline hover:text-green-400"
+        className="font-bold hover:text-green-500 hover:underline"
       >
         {`${title}/`}
       </Link>
       <Link
         href={`https://github.com/amrxt1/${repo}`}
-        className="ml-4 hover:text-green-400 hover:underline"
+        className="ml-4 font-bold hover:text-green-500 hover:underline"
       >
         [view code]
       </Link>
-      <div className="text-text/75">{desc}</div>
-      <div className="text-text/75">{techUsed.join(", ")}</div>
+      <div className="text-text/85 text-sm italic">{techUsed.join(", ")}</div>
     </div>
   );
 }
@@ -28,8 +27,8 @@ function Project({ project }) {
 const Projects = () => {
   return (
     <>
-      <CodeBlock cmd="ls projects/" />
       <Container>
+        <CodeBlock cmd="ls projects/" className="mt-4 text-lg" />
         {projectsData.map((project, index) => (
           <Project key={index} project={project} />
         ))}

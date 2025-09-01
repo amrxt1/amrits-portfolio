@@ -1,3 +1,4 @@
+"use client";
 function defaultHandler() {
   alert("Unfortunately, the button is still being wired.");
 }

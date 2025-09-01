@@ -1,6 +1,6 @@
 const CodeBlock = ({ children, cmd = "ls", className = "" }) => {
   return (
-    <div className={`p-2 pb-8 text-sm lg:text-lg ${className}`}>
+    <div className={`lg:text-lg ${className} `}>
       <div>
         <span className="mr-1 text-green-500">amrit@portfolio:~$</span>
         <span>{cmd}</span>
