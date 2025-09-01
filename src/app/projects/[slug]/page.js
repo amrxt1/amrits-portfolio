@@ -13,7 +13,7 @@ const Project = ({}) => {
 
   return (
     <>
-      <CodeBlock cmd={`./${slug} --info`} />
+      <CodeBlock cmd={`./${slug} --info`} alwaysAnimate />
       <ProjectDetails project={project} />
     </>
   );

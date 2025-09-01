@@ -60,6 +60,7 @@ const Projects = () => {
         <CodeBlock
           cmd={`${query !== "all" ? "ls projects/ | grep " + query : "ls projects/ -a"}`}
           className="my-4 text-sm"
+          alwaysAnimate
         />
         <div className="w-full rounded-sm border border-green-500/50 px-2 py-1">
           <p>Filter:</p>

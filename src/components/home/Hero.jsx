@@ -9,7 +9,11 @@ const Hero = () => {
       <div className="col-span-1 lg:col-span-2">
         <HeroWelcome />
       </div>
-      <CodeBlock className="border-text text-red-500" cmd="whoami">
+      <CodeBlock
+        className="border-text text-red-500"
+        cmd="whoami"
+        alwaysAnimate
+      >
         <p>Systems programmer who builds ARM CPUs in Verilog</p>
         <p>Full-stack developer with a hardware background</p>
       </CodeBlock>
