@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${jetBrainsMono.variable} pb-16 antialiased`}>
         <TmuxBar />
-        <Instructions />
+        <Launcher />
 
         {children}
       </body>
