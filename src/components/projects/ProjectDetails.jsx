@@ -1,10 +1,13 @@
-import Container from "@/components/Container";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Scrollbar } from "swiper/modules";
 import Link from "next/link";
+
+import "swiper/css";
 
 const ProjectDetails = ({ project }) => {
   const {
     title = "no title here.",
-    img = null,
+    images = [],
     techUsed = [],
     features = [],
     details = "no details here.",
@@ -12,7 +15,7 @@ const ProjectDetails = ({ project }) => {
     preview = null,
   } = project;
   return (
-    <Container className="mt-4 space-y-2">
+    <div className="mt-4 space-y-2">
       <div>
         <h1 className="text-lg text-red-500">{title}</h1>
         <div className="flex gap-4">
@@ -33,17 +36,28 @@ const ProjectDetails = ({ project }) => {
           )}
         </div>
       </div>
-      <p className="text-text/70">{details}</p>
-      <p>made using: {techUsed.join(", ")}</p>
-      {img && (
-        <div className="my-4 flex w-full justify-center">
-          <img
-            src={img}
-            alt={`${title} preview`}
-            className="w-full border-text/50 rounded-sm border-2"
-          />
+      {images.length > 0 && (
+        <div className="space-y-4">
+          <Swiper
+            modules={Scrollbar}
+            spaceBetween={25}
+            slidesPerView={1}
+            scrollbar={{ draggable: true }}
+          >
+            {images.map((image, index) => (
+              <SwiperSlide key={index} className="flex w-full justify-center">
+                <img
+                  src={image}
+                  alt={`${title} screenshot ${index + 1}`}
+                  className="border-text/50 w-full rounded-sm border-2 shadow-lg"
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       )}
+      <p className="text-text/70">{details}</p>
+      <p>made using: {techUsed.join(", ")}</p>
       {features.length && (
         <div>
           <h2>Features</h2>
@@ -54,7 +68,7 @@ const ProjectDetails = ({ project }) => {
           </div>
         </div>
       )}
-    </Container>
+    </div>
   );
 };
 

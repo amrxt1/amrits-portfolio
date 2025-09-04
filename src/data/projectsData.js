@@ -4,7 +4,11 @@ const projectsData = [
     title: "armV7",
     desc: "A lightweight ARMv7 CPU core implemented in Verilog.",
     slug: "armv7",
-    img: "/project-images/armv7.png",
+    images: [
+      "/project-images/armv7.png",
+      "/project-images/armv7-reg-tb.png",
+      "/project-images/armv7.png",
+    ],
     techUsed: ["verilog"],
     features: [
       "Implements instruction fetch, decode, and ALU pipeline",
@@ -23,7 +27,11 @@ const projectsData = [
     title: "CCHive",
     desc: "Full-stack student collaboration platform with real-time features.",
     slug: "cchive",
-    img: "/project-images/cchive.png",
+    images: [
+      "/project-images/cchive-dashboard.png",
+      "/project-images/cchive-messaging.png",
+      "/project-images/cchive-projects.png",
+    ],
     techUsed: ["ruby", "js"],
     features: [
       "REST API with authentication",
@@ -44,6 +52,10 @@ const projectsData = [
     title: "Custom Assembler",
     desc: "A custom assembler for a teaching CPU architecture.",
     slug: "arm-assembler",
+    images: [
+      "/project-images/assembler-code.png",
+      "/project-images/assembler-output.png",
+    ],
     techUsed: ["asm", "python"],
     features: [
       "Parses custom assembly language",
@@ -61,7 +73,11 @@ const projectsData = [
     title: "Fire Hall Events",
     desc: "Website to manage and display upcoming community events.",
     slug: "fire-hall-events",
-    img: "/project-images/fire-hall-events.png",
+    images: [
+      "/project-images/fire-hall-home.png",
+      "/project-images/fire-hall-calendar.png",
+      "/project-images/fire-hall-admin.png",
+    ],
     techUsed: ["js"],
     features: [
       "Interactive event calendar",
@@ -80,7 +96,11 @@ const projectsData = [
     title: "QuickMove Solutions",
     desc: "Logistics and moving services booking platform.",
     slug: "quickmove-solutions",
-    img: "/project-images/quickmove.png",
+    images: [
+      "/project-images/quickmove-home.png",
+      "/project-images/quickmove-booking.png",
+      "/project-images/quickmove-tracking.png",
+    ],
     techUsed: ["js"],
     features: [
       "Booking system for moving services",
@@ -99,6 +119,10 @@ const projectsData = [
     title: "shiftBOT",
     desc: "A scheduling assistant bot for shift-based jobs.",
     slug: "shiftbot",
+    images: [
+      "/project-images/shiftbot-schedule.png",
+      "/project-images/shiftbot-conflicts.png",
+    ],
     techUsed: ["python"],
     features: [
       "Generates optimal shift rotations",
@@ -116,6 +140,10 @@ const projectsData = [
     title: "Applications BOT",
     desc: "Discord bot for handling internship applications.",
     slug: "applications-bot",
+    images: [
+      "/project-images/applications-bot-interface.png",
+      "/project-images/applications-bot-data.png",
+    ],
     techUsed: ["python"],
     features: [
       "Collects and validates form submissions",
@@ -133,6 +161,11 @@ const projectsData = [
     title: "Project: Facebook",
     desc: "Recreation of early Facebook features for learning purposes.",
     slug: "rails-social",
+    images: [
+      "/project-images/facebook-feed.png",
+      "/project-images/facebook-profile.png",
+      "/project-images/facebook-friends.png",
+    ],
     techUsed: ["ruby"],
     features: [
       "User profiles with friend requests",
@@ -151,6 +184,10 @@ const projectsData = [
     title: "CS-120 Projects",
     desc: "Collection of course projects covering core CS concepts.",
     slug: "cs-120",
+    images: [
+      "/project-images/cs120-algorithms.png",
+      "/project-images/cs120-performance.png",
+    ],
     techUsed: ["python"],
     features: [
       "Sorting algorithm implementations",

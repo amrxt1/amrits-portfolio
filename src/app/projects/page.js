@@ -9,7 +9,7 @@ import Link from "next/link";
 function Project({ project }) {
   const { title, slug, techUsed, repo } = project;
   return (
-    <div className="hover:bg-text/10 py-2">
+    <div className="md:hover:bg-text/10 py-2">
       <Link
         href={`/projects/${slug}`}
         className="font-bold hover:text-green-500 hover:underline"
