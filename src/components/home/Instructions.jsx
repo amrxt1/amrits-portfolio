@@ -3,6 +3,7 @@ import { useState } from "react";
 
 import ScreenOverlay from "@/components/ScreenOverlay";
 import Display from "@/components/Display";
+import Link from "next/link";
 
 export default function Instructions({ children }) {
   const [showOverlay, setShowOverlay] = useState(true);
@@ -29,6 +30,15 @@ export default function Instructions({ children }) {
               NB: Do NOT input
               <span className="text-green-500/80 italic">{' "meme" '}</span>
               into the Launcher
+            </p>
+            <p className="text-red-300">
+              For a simpler layout, you can visit:{" "}
+              <Link
+                href={"https://amritv.space"}
+                className="text-background rounded-lg bg-green-500 px-4 font-bold"
+              >
+                here
+              </Link>
             </p>
           </Display>
         </ScreenOverlay>
