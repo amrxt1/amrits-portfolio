@@ -1,8 +1,10 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Scrollbar } from "swiper/modules";
+import { Navigation, Scrollbar } from "swiper/modules";
 import Link from "next/link";
 
 import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/scrollbar";
 
 const ProjectDetails = ({ project }) => {
   const {
@@ -37,19 +39,23 @@ const ProjectDetails = ({ project }) => {
         </div>
       </div>
       {images.length > 0 && (
-        <div className="space-y-4">
+        <div className="my-8">
           <Swiper
-            modules={Scrollbar}
+            modules={[Scrollbar, Navigation]}
             spaceBetween={25}
             slidesPerView={1}
+            navigation
             scrollbar={{ draggable: true }}
           >
             {images.map((image, index) => (
-              <SwiperSlide key={index} className="flex w-full justify-center">
+              <SwiperSlide
+                key={index}
+                className="flex h-full w-full items-center justify-center"
+              >
                 <img
                   src={image}
                   alt={`${title} screenshot ${index + 1}`}
-                  className="border-text/50 w-full rounded-sm border-2 shadow-lg"
+                  className="h-full max-h-96 w-full object-contain shadow-lg md:max-h-[500px]"
                 />
               </SwiperSlide>
             ))}

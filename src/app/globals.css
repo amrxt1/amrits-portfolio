@@ -6,6 +6,10 @@
   --background: #1e1e2e;
   --text: #cdd6f4;
 
+  /* Custom Swiper Styling */
+  --swiper-scrollbar-bg-color: rgba(34, 197, 94, 0.5);
+  --swiper-scrollbar-drag-bg-color: #22c55e;
+  --swiper-navigation-color: #22c55e;
 }
 
 @theme inline {
@@ -20,13 +24,41 @@
   }
 }
 
+@media (max-width: 768px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
 body {
   background: var(--background);
   color: var(--text);
   font-family: var(--font-jetbrains), monospace;
 }
 
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+/* Custom Swiper Styling */
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  position: static !important;
+  margin-top: 5px;
+}
+.swiper-wrapper {
+  align-items: center;
 }
