@@ -2,11 +2,12 @@ import Container from "@/components/Container";
 import CodeBlock from "./CodeBlock";
 import Link from "next/link";
 import HeroWelcome from "@/components/home/HeroWelcome";
+import GitCommits from "./GitCommits";
 
 const Hero = () => {
   return (
-    <Container className="*:border-text/20 *:hover:border-text/50 mt-4 grid min-h-[90vh] grid-cols-1 *:border *:p-2 lg:grid-cols-2">
-      <div className="col-span-1 lg:col-span-2">
+    <Container className="*:border-text/20 *:hover:border-text/50 mt-4 grid min-h-[90vh] grid-cols-1 *:border *:p-2 md:grid-cols-2">
+      <div className="col-span-1 md:col-span-2">
         <HeroWelcome />
       </div>
       <CodeBlock
@@ -37,6 +38,9 @@ const Hero = () => {
         <p>up 1 years, React </p>
         <p>up 3 years, Rails </p>
         <p>up 5 years, Linux </p>
+      </CodeBlock>
+      <CodeBlock cmd="git log --oneline" className="md:col-span-2">
+        <GitCommits />
       </CodeBlock>
     </Container>
   );
