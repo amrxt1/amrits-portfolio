@@ -46,7 +46,9 @@ const Launcher = () => {
 
           const lowerSearch = searchQuery.toLowerCase();
           const filteredItems = commands.filter(
-            (c) => c.name.includes(lowerSearch) || c.href.includes(lowerSearch),
+            (c) =>
+              c.name.toLowerCase().includes(lowerSearch) ||
+              c.href.includes(lowerSearch),
           );
 
           if (filteredItems.length > 0) {
@@ -81,7 +83,9 @@ const Launcher = () => {
   const lowerSearch = searchQuery.toLowerCase();
 
   const filteredItems = commands.filter(
-    (c) => c.name.includes(lowerSearch) || c.href.includes(lowerSearch),
+    (c) =>
+      c.name.toLowerCase().includes(lowerSearch) ||
+      c.href.includes(lowerSearch),
   );
 
   return (
@@ -129,6 +133,9 @@ const Launcher = () => {
                   </Link>
                 </div>
               ))}
+              {filteredItems.length === 0 && searchQuery && (
+                <div className="text-text/50 p-2">No results found</div>
+              )}
             </motion.div>
           </ScreenOverlay>
         )}
