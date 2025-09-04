@@ -9,7 +9,7 @@ import Link from "next/link";
 function Project({ project }) {
   const { title, slug, techUsed, repo } = project;
   return (
-    <div className="mt-2">
+    <div className="hover:bg-text/10 py-2">
       <Link
         href={`/projects/${slug}`}
         className="font-bold hover:text-green-500 hover:underline"
@@ -59,10 +59,10 @@ const Projects = () => {
       <Container>
         <CodeBlock
           cmd={`${query !== "all" ? "ls projects/ | grep " + query : "ls projects/ -a"}`}
-          className="my-4 text-sm"
+          className="my-4 text-sm md:text-lg"
           alwaysAnimate
         />
-        <div className="w-full rounded-sm border border-green-500/50 px-2 py-1">
+        <div className="w-full rounded-sm border border-green-500/50 px-2 py-1 select-none md:flex md:gap-4">
           <p>Filter:</p>
           <div className="flex gap-x-2">
             {uniqueTech.map((t, i) => (
