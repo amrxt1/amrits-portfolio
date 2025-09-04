@@ -34,7 +34,7 @@ export default function Instructions({ children }) {
             <p className="text-red-300">
               For a simpler layout, you can visit:{" "}
               <Link
-                href={"https://amritv.space"}
+                href={"https://simple.amritv.space"}
                 className="text-background rounded-lg bg-green-500 px-4 font-bold"
               >
                 here
