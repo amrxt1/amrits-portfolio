@@ -6,7 +6,7 @@ const Display = ({
   className = "",
 }) => {
   return (
-    <div className="bg-background z-20 overflow-auto rounded-sm border border-green-500/50 p-4 py-10">
+    <div className="bg-background z-20 overflow-auto border border-green-500/50 p-4 py-10">
       <div className="flex flex-wrap items-center">
         <h1 className="flex-1 text-xl font-bold text-green-500">{heading}</h1>
         <button

@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "motion/react";
+import Link from "next/link";
 
 const HeroWelcome = () => {
   return (
@@ -15,11 +16,20 @@ const HeroWelcome = () => {
         duration: 0.8,
         type: "easeIn",
       }}
-      className="py-32"
+      className="py-18"
     >
       <div className="px-4 text-center text-3xl font-bold text-blue-400">
-        Welcome to amrit's portfolio.
+        amritveer's portfolio
       </div>
+      <p className="mt-2 text-center">
+        For a simpler layout, you can visit{" "}
+        <Link
+          href={"https://simple.amritv.space"}
+          className="hover:text-green-500"
+        >
+          [<span className="underline">{" here "}</span>]
+        </Link>
+      </p>
     </motion.div>
   );
 };

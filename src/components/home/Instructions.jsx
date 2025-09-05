@@ -4,6 +4,7 @@ import { useState } from "react";
 import ScreenOverlay from "@/components/ScreenOverlay";
 import Display from "@/components/Display";
 import Link from "next/link";
+import Container from "@/components/Container";
 
 export default function Instructions({ children }) {
   const [showOverlay, setShowOverlay] = useState(true);
@@ -12,35 +13,37 @@ export default function Instructions({ children }) {
     <>
       {showOverlay && (
         <ScreenOverlay>
-          <Display
-            clickHandler={() => setShowOverlay(false)}
-            heading="Instructions"
-            className="space-y-2"
-          >
-            <p>
-              Use the tmux-like bar at the bottom for switching pages. It has
-              clickable links to navigate around.
-            </p>
-            <p className="hidden md:block">
-              Press
-              <span className="text-green-500/80 italic">{' "/" '}</span>
-              anytime to summon the launcher.
-            </p>
-            <p className="hidden md:block">
-              NB: Do NOT input
-              <span className="text-green-500/80 italic">{' "meme" '}</span>
-              into the Launcher
-            </p>
-            <p className="text-red-300">
-              For a simpler layout, you can visit:{" "}
-              <Link
-                href={"https://simple.amritv.space"}
-                className="text-background rounded-lg bg-green-500 px-4 font-bold"
-              >
-                here
-              </Link>
-            </p>
-          </Display>
+          <Container>
+            <Display
+              clickHandler={() => setShowOverlay(false)}
+              heading="Instructions"
+              className="space-y-2"
+            >
+              <p>
+                Use the tmux-like bar at the bottom for switching pages. It has
+                clickable links to navigate around.
+              </p>
+              <p className="hidden md:block">
+                Press
+                <span className="text-green-500/80 italic">{' "/" '}</span>
+                anytime to summon the launcher.
+              </p>
+              <p className="hidden md:block">
+                NB: Do NOT input
+                <span className="text-green-500/80 italic">{' "meme" '}</span>
+                into the Launcher
+              </p>
+              <p className="">
+                For a simpler layout, you can visit{" "}
+                <Link
+                  href={"https://simple.amritv.space"}
+                  className="hover:text-green-500"
+                >
+                  [<span className="underline">{" here "}</span>]
+                </Link>
+              </p>
+            </Display>
+          </Container>
         </ScreenOverlay>
       )}
       {children}
