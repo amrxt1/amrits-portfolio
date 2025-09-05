@@ -14,7 +14,9 @@ const GitCommits = async () => {
               <div key={idx} className="flex gap-2">
                 <p>{c.sha.slice(0, 7)}</p>
                 <p>{c.commit.message}</p>
-                <p className="flex-1 text-right">{c.repository.name}</p>
+                <p className="hidden flex-1 text-right md:block">
+                  {c.repository.name}
+                </p>
               </div>
             ))}
           </div>

@@ -6,7 +6,7 @@ import GitCommits from "./GitCommits";
 
 const Hero = () => {
   return (
-    <Container className="*:border-text/20 *:hover:border-text/50 mt-4 grid min-h-[90vh] grid-cols-1 *:border *:p-2 md:grid-cols-2">
+    <Container className="md:*:border-text/20 *:hover:border-text/50 mt-4 grid min-h-[90vh] grid-cols-1 *:px-0 *:py-6 md:grid-cols-2 md:*:border md:*:p-2">
       <div className="col-span-1 md:col-span-2">
         <HeroWelcome />
       </div>
